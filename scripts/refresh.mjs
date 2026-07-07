@@ -132,11 +132,24 @@ catch {
 }
 if (!Array.isArray(parsed)) { console.error('Claude output is not an array'); process.exit(1); }
 
+// Shape check for generated fakes. Same size limits as real headlines, but
+// without the newsletter-boilerplate ban list (a fake about e-bike "upgrades"
+// is fine; a real subscribe-link is not) — just game-breaking tells.
+function validFake(t) {
+  const words = t.split(' ');
+  return (
+    words.length >= 4 && words.length <= 18 &&
+    t.length >= 24 && t.length <= 140 &&
+    /^[A-Z0-9$‘'"“]/.test(t) &&
+    !/https?:|btown brief|real or fake|\bfake\b/i.test(t)
+  );
+}
+
 const newFakes = [];
 for (const h of parsed) {
   if (typeof h !== 'string') continue;
   const t = h.replace(/\s+/g, ' ').trim().replace(/\.$/, '');
-  if (!looksLikeHeadline(t)) { console.error(`rejected (shape): ${t}`); continue; }
+  if (!validFake(t)) { console.error(`rejected (shape): ${t}`); continue; }
   if (knownKeys.has(keyOf(t))) { console.error(`rejected (dupe): ${t}`); continue; }
   knownKeys.add(keyOf(t));
   newFakes.push({ headline: t, generated: new Date().toISOString().slice(0, 10) });

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#f5f1e6">
+<title>REAL OR FAKE: BTV Headlines — a Btown Games production</title>
+<meta name="description" content="Four Burlington headlines. Three ran in the Btown Brief. One is a fake. Can you spot it?">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="REAL OR FAKE: BTV Headlines">
+<meta property="og:description" content="Four Burlington headlines. Three really happened. One is a fake. How long can your streak survive?">
+<meta property="og:url" content="https://btownbrief.github.io/real-or-fake/">
+<meta property="og:image" content="https://btownbrief.github.io/real-or-fake/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="REAL OR FAKE: BTV Headlines">
+<meta name="twitter:description" content="Three real Burlington headlines. One fake. Spot it.">
+<meta name="twitter:image" content="https://btownbrief.github.io/real-or-fake/og-image.png">
+
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icon-180.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Real or Fake">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="paper">
+
+  <!-- Masthead -->
+  <header id="masthead">
+    <div class="ears">
+      <span class="ear" id="ear-left">Burlington, Vermont</span>
+      <span class="ear" id="ear-date"></span>
+    </div>
+    <h1 id="nameplate">REAL <span class="or">or</span> FAKE</h1>
+    <div id="subplate">★ BTV HEADLINES ★ A BTOWN GAMES PRODUCTION ★</div>
+    <div id="scorebar">
+      <span>STREAK <b id="streak">0</b></span>
+      <span>SCORE <b id="score">0</b></span>
+      <span>BEST <b id="best">0</b></span>
+    </div>
+  </header>
+
+  <!-- Intro screen -->
+  <section id="intro" class="screen">
+    <p class="deck">Four local headlines. <b>Three ran in the Btown Brief.</b><br>One never happened. Tap the fake.</p>
+    <p class="deck small">One wrong guess ends the run. Every real headline links to its story — win or lose, you leave better informed.</p>
+    <button class="btn-lead" id="startBtn">EXTRA! EXTRA! — PLAY</button>
+    <p id="pool-flex" class="fineprint"></p>
+  </section>
+
+  <!-- Round screen -->
+  <section id="round" class="screen hidden">
+    <div id="round-kicker">
+      <span id="round-no"></span>
+      <span id="round-task">FIND THE <b class="fake-word">FAKE</b></span>
+    </div>
+    <div id="cards"></div>
+    <div id="verdict" class="hidden">
+      <div id="verdict-line"></div>
+      <button class="btn-lead hidden" id="nextBtn">NEXT ROUND →</button>
+    </div>
+  </section>
+
+  <!-- Game over -->
+  <section id="gameover" class="screen hidden">
+    <div id="stamp">STOP THE PRESSES</div>
+    <div id="final-line"></div>
+    <div class="go-score">
+      <div id="final-score">0</div>
+      <div class="go-label">FINAL SCORE</div>
+      <div id="best-line"></div>
+    </div>
+
+    <div class="lb hidden" id="lb">
+      <div class="lb-head">MONTHLY LEADERBOARD</div>
+      <div class="lb-tabs">
+        <button class="lb-chip sel" id="lbThisBtn">This Month</button>
+        <button class="lb-chip" id="lbLastBtn">Last Month</button>
+      </div>
+      <div class="lb-status" id="lbStatus"></div>
+      <ol id="lbList"></ol>
+      <div class="lb-form hidden" id="lbForm">
+        <input id="lbNameInput" maxlength="20" placeholder="Your byline" autocomplete="off">
+        <button class="lb-chip" id="lbSaveBtn">Save</button>
+      </div>
+      <button class="lb-chip lb-rename" id="lbRenameBtn">✏️ Change name</button>
+    </div>
+
+    <div class="go-actions">
+      <button class="btn-lead" id="againBtn">RUN IT AGAIN</button>
+      <button class="btn-second" id="shareBtn">📋 SHARE YOUR STREAK</button>
+    </div>
+  </section>
+
+  <footer id="colophon">
+    A Btown Games production · <a href="https://www.btownbrief.com" target="_blank" rel="noopener">Read the Btown Brief →</a>
+  </footer>
+</div>
+<script type="module" src="js/main.js"></script>
+</body>
+</html>

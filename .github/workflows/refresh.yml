@@ -1,0 +1,36 @@
+name: Refresh headlines
+
+on:
+  schedule:
+    # Btown Brief publishes Monday and Friday mornings (Eastern).
+    # 16:00 UTC = 12:00 EDT / 11:00 EST — the edition exists by then
+    # in both daylight-saving regimes.
+    - cron: '0 16 * * 1,5'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Fetch new reals + generate fakes
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: node scripts/refresh.mjs
+      - name: Commit if changed
+        run: |
+          if ! git diff --quiet data/; then
+            git config user.name "btown-brief-bot"
+            git config user.email "actions@github.com"
+            git add data/real-headlines.json data/fake-headlines.json
+            git commit -m "Refresh headlines (new reals + generated fakes)"
+            git push
+          else
+            echo "No headline changes."
+          fi

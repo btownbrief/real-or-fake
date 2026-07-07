@@ -1,301 +1,939 @@
 [
-  {"headline": "Church Street Marketplace to Pilot Heated Bricks Along Top Block This Winter"},
-  {"headline": "Burlington City Council Weighs Permit System for Downtown Buskers"},
-  {"headline": "New Winooski Roundabout Mural Delayed After Paint Fails Cold-Weather Test"},
-  {"headline": "UVM Study Finds Lake Champlain Ice Cover at Second-Lowest Level on Record"},
-  {"headline": "Pine Street Coffee Roaster Expands Into Former Auto Garage"},
-  {"headline": "City Market Considers 24-Hour Pilot at Downtown Store"},
-  {"headline": "Burlington Explores Composting Program for Church Street Food Vendors"},
-  {"headline": "Old North End Community Fridge Network Adds Fourth Location"},
-  {"headline": "South End Arts Collective Loses Lease as Pine Street Rents Climb"},
-  {"headline": "Vermont Lawmakers Consider Statewide Ban on Parking Lot Leaf Blowers"},
-  {"headline": "Leddy Park Arena to Close Two Months for Dehumidification Overhaul"},
-  {"headline": "North Beach Campground Reservations Sell Out in Under an Hour"},
-  {"headline": "Burlington Schools Pilot Later Start Times at Two Elementary Schools"},
-  {"headline": "Winooski Bridge Repainting Project Pushed to Spring After Bid Comes In High"},
-  {"headline": "ECHO Center Announces Overnight 'Science Sleepover' Series for Adults"},
-  {"headline": "Battery Park Bandshell to Get Solar Roof Under New City Plan"},
-  {"headline": "Intervale Center Adds Weekly Gleaning Shifts as Demand Doubles"},
-  {"headline": "BTV Airport Adds Nonstop Service to Nashville Starting in May"},
-  {"headline": "Green Mountain Transit Tests On-Demand Evening Shuttle in the New North End"},
-  {"headline": "Burlington Bike Path Detour Planned Near Oakledge Through October"},
-  {"headline": "Shelburne Museum Extends Hours for First-Ever Winter Lantern Festival"},
-  {"headline": "Flynn Announces Free Ticket Program for First-Time Theatergoers"},
-  {"headline": "Nectar's Launches Monthly All-Vinyl Gravy Fries Happy Hour"},
-  {"headline": "Burlington Farmers Market Weighs Move Back to City Hall Park"},
-  {"headline": "Colchester Approves Funding for Malletts Bay Shoreline Boardwalk Study"},
-  {"headline": "Essex Junction Train Station to Add Heated Waiting Room by December"},
-  {"headline": "Vermont Green FC Announces Youth Clinic Series at Virtue Field"},
-  {"headline": "Lake Monsters to Trial Reusable Cup Deposit System at Centennial Field"},
-  {"headline": "UVM Medical Center Opens Walk-In Clinic for Winter Sports Injuries"},
-  {"headline": "Burlington Electric Offers Rebates for E-Cargo Bikes Used by Local Businesses"},
-  {"headline": "City Council Debates Whether Food Trucks Can Overwinter in Battery Park"},
-  {"headline": "New Moran Frame Programming to Include Saturday Morning Yoga Series"},
-  {"headline": "Burlington Parks Department Hiring 'Goose Deterrence Team' for Waterfront"},
-  {"headline": "Church Street Toy Shop Owner Retires After Three Decades on the Bricks"},
-  {"headline": "Winooski Food Co-op Concept Clears First Organizing Hurdle"},
-  {"headline": "Old Spokes Home Expands Free Bike Repair Nights to Twice Weekly"},
-  {"headline": "Burlington Considers Permit-Only Parking Around Callahan Park"},
-  {"headline": "Vermont Symphony Orchestra to Play Free Show on the Waterfront in August"},
-  {"headline": "CityPlace Developers Promise Ground-Floor Grocery in Next Phase"},
-  {"headline": "UVM Students Launch Late-Night Creemee Delivery Service"},
-  {"headline": "Rock Point School Opens Its Trails to Public on Weekends"},
-  {"headline": "Red Rocks Park to Cap Summer Weekend Visitors After Parking Complaints"},
-  {"headline": "Burlington's Last Video Rental Shelf Finds New Home at Fletcher Free Library"},
-  {"headline": "Sandbar State Park Adds Adaptive Kayak Launch"},
-  {"headline": "Hula Campus Announces Coworking Scholarship for Climate Startups"},
-  {"headline": "Burlington High School Robotics Team Headed to World Championships"},
-  {"headline": "Homeport to Anchor New Home-Goods Cooperative on Church Street"},
-  {"headline": "Muddy Waters Regulars Petition to Save Cafe's Iconic Couch"},
-  {"headline": "Burlington Country Club Faces Pushback Over Proposed Housing on Back Nine"},
-  {"headline": "Vermont Everyone Eats Program Gets One-Year Extension From Lawmakers"},
-  {"headline": "Ski Rack Adds Ski-Commuter Storage Lockers for Downtown Workers"},
-  {"headline": "Burlington Weighs Turning Elmwood Avenue Lot Into Pocket Park"},
-  {"headline": "Champlain College Pilots Tuition Discount for Vermont Gap-Year Students"},
-  {"headline": "Grand Isle Ferry Adds Sunrise Runs for Commuters"},
-  {"headline": "Local Motion Proposes Protected Bike Lane for Full Length of North Avenue"},
-  {"headline": "Burlington Firefighters Calendar Raises Record Sum for Camp Ta-Kum-Ta"},
-  {"headline": "New Owner Reopens Beloved New North End Diner With Same Menu, Same Booths"},
-  {"headline": "Vermont Teddy Bear Factory Tour Adds 'Repair Shop' Exhibit"},
-  {"headline": "Burlington Wastewater Upgrade Wins Federal Grant, Trims Rate Hike"},
-  {"headline": "Oakledge Treehouse to Get Accessibility Upgrade This Fall"},
-  {"headline": "Winooski High Students Win National Award for Multilingual News Podcast"},
-  {"headline": "Pearl Street Diner Brings Back Overnight Hours for First Time Since 2020"},
-  {"headline": "Burlington Launches Snow-Shoveling Match Program for Elderly Residents"},
-  {"headline": "Queen City Brewery Collaboration Beer to Fund Bike Path Benches"},
-  {"headline": "Fletcher Free Library Eliminates All Late Fines Permanently"},
-  {"headline": "Burlington Telecom Expands Fiber to Final Unserved Blocks in the South End"},
-  {"headline": "Perkins Pier Redesign Adds Kayak Storage and Swim Steps"},
-  {"headline": "Vermont Foodbank Opens Satellite Distribution Hub in Former Winooski Mill Space"},
-  {"headline": "Mount Philo Sunrise Crowds Prompt New Reservation System"},
-  {"headline": "Burlington to Replace Downtown Parking Meters With Pay-by-Plate Kiosks"},
-  {"headline": "Shelburne Farms Cheese Wins Top Honors at International Competition"},
-  {"headline": "New Bagel Shop in Former Bank Building Keeps the Vault as Seating"},
-  {"headline": "Charlotte Beach Weighs First-Ever Nonresident Parking Fee"},
-  {"headline": "UVM Extension Launches Backyard Sugaring Course After Waitlist Triples"},
-  {"headline": "Burlington's Great Streets Project Turns to King Street This Spring"},
-  {"headline": "Higher Ground Books First Show for New Waterfront Venue"},
-  {"headline": "City Hall Park Fountain to Run on Recycled Rainwater After Retrofit"},
-  {"headline": "Milton Approves Vermont's Largest Municipal Solar Array"},
-  {"headline": "Thirty-Year-Old Church Street Pretzel Cart Passes to Founder's Daughter"},
-  {"headline": "Burlington Dog Owners Push for Winter Hours at Starr Farm Dog Park"},
-  {"headline": "Vermont Pub & Brewery Revives Original 1988 Recipe for Anniversary Batch"},
-  {"headline": "North Avenue Alliance Calls for Traffic Study Before Next Housing Phase"},
-  {"headline": "Burlington Curling Club Breaks Ground on First Dedicated Ice Shed"},
-  {"headline": "Chittenden County Towns Weigh Shared Composting Facility"},
-  {"headline": "Waterfront Skate Park Expansion Wins Tony Hawk Foundation Grant"},
-  {"headline": "Zero Gravity Taproom to Host Weekly Repair Cafe in Off-Season"},
-  {"headline": "Burlington Considers 'Snow Day' Fare-Free Buses After Pilot Success"},
-  {"headline": "St. Michael's College Opens Its Observatory to the Public Monthly"},
-  {"headline": "Winooski's Rotary Roundabout Named Among Nation's Busiest Single-Lane Circles"},
-  {"headline": "Kids' Bike Swap at Old Spokes Home Outgrows Its Parking Lot"},
-  {"headline": "Burlington Bagel Institute Opens on Riverside Avenue With Sourdough-Only Menu"},
-  {"headline": "Vermont's First Indoor Pickleball Barn Opens in Williston"},
-  {"headline": "Church Street Ambassadors Program Doubles in Size for Summer"},
-  {"headline": "New Ferry-to-Bikepath Pass Bundles Crossing and Rental in One Ticket"},
-  {"headline": "South Burlington Weighs Scented-Product Ban for City Buildings"},
-  {"headline": "Hinesburg Farm Stand Goes Fully Honor-System, Sales Go Up"},
-  {"headline": "Burlington Rec Department Adds Adult Kickball After 400-Person Waitlist"},
-  {"headline": "Maglianero Reopens as Worker-Owned Cafe After Yearlong Campaign"},
-  {"headline": "Salvation Farms Expands Surplus Crop Program to Chittenden County"},
-  {"headline": "Burlington Weighs Requiring Bike Parking at All New Apartment Buildings"},
-  {"headline": "Lake Champlain Chocolates Debuts Maple Creemee Truffle for Summer Only"},
-  {"headline": "Chubby Muffin Late-Night Window Returns After Two-Year Hiatus"},
-  {"headline": "Burlington Approves First Car-Free Residential Development Near Downtown"},
-  {"headline": "Vermont Railway to Test Weekend Excursion Trains to Middlebury"},
-  {"headline": "New North End Little League Fields to Get Lights After Decade of Fundraising"},
-  {"headline": "Speeder & Earl's Brings Back Punch Cards by Popular Demand"},
-  {"headline": "Burlington Housing Authority Converts Downtown Motel Into Studio Apartments"},
-  {"headline": "Shelburne Road Corridor Study Recommends Center-Running Bus Lanes"},
-  {"headline": "UVM Dairy Bar Reopens for Summer With Student-Invented Flavors"},
-  {"headline": "Winooski Launches Multilingual Small-Business Grant Round"},
-  {"headline": "Adirondack Views Drive Record Season for Sunset Cruise Operators"},
-  {"headline": "Burlington Considers Banning Right Turns on Red Downtown"},
-  {"headline": "Green Up Day Sets Statewide Record for Volunteer Turnout"},
-  {"headline": "August First Expands Bakery After Buying Neighboring Storefront"},
-  {"headline": "City Council Approves Public Bathroom Pilot for Waterfront Park"},
-  {"headline": "Burlington Beekeepers Association Installs Hives on City Hall Roof"},
-  {"headline": "Ri Ra Building's New Tenant Promises to Keep the Snug Intact"},
-  {"headline": "Vermont Community Garden Network Reports Longest Waitlists Ever"},
-  {"headline": "Starr Farm Community Sailing Center Adds Free Youth Program"},
-  {"headline": "Burlington to Study Congestion Pricing for Waterfront Parking Lots"},
-  {"headline": "Mater Christi Campus Redevelopment Adds Senior Housing to Plan"},
-  {"headline": "Foam Brewers Patio Expansion Approved After Yearlong Permit Fight"},
-  {"headline": "Regional Dispatch Merger Brings Faster 911 Response Times, Data Shows"},
-  {"headline": "Burlington's Retired Fire Boat Finds Second Life as Floating Classroom"},
-  {"headline": "King Street Center Breaks Ground on Teen Workshop Wing"},
-  {"headline": "Vermont's Oldest General Store Adds EV Chargers Next to the Penny Candy"},
-  {"headline": "Bike Ferry Sets Single-Day Ridership Record Over Holiday Weekend"},
-  {"headline": "Burlington Weighs Letting Backyard Hens in All Residential Zones"},
-  {"headline": "ONE Arts Center Launches Pay-What-You-Can Music Lessons"},
-  {"headline": "Waterworks Building Adds Public Dock Slips for Restaurant Boaters"},
-  {"headline": "Hotel Vermont Rooftop Sauna Opens to Non-Guests on Weekdays"},
-  {"headline": "Essex Experience Adds Year-Round Indoor Farmers Market Hall"},
-  {"headline": "Burlington Piano Project Places Painted Uprights in Five Parks"},
-  {"headline": "Vermont Adaptive Expands Free Paddling Program at North Beach"},
-  {"headline": "Barge Canal Cleanup Enters Final Phase After Three Decades"},
-  {"headline": "Church Street's Oldest Bench Gets Historic Plaque and a Restoration"},
-  {"headline": "Burlington School District Adds Farm-to-School Coordinator Position"},
-  {"headline": "Petra Cliffs Plans Outdoor Climbing Tower Visible From the Interstate"},
-  {"headline": "New Community Land Trust Homes on North Avenue Sell by Lottery"},
-  {"headline": "Winooski Falls Overlook to Get Nighttime Lighting After Safety Review"},
-  {"headline": "Burlington Ranked Most Walkable Small City in the Northeast by Advocacy Group"},
-  {"headline": "Feldman's Bagels Adds Montreal-Style Wood-Fired Oven"},
-  {"headline": "Queen City Ghostwalk Adds Route Through the Old North End"},
-  {"headline": "Lake Champlain Sea Grant Funds Study of Urban Stormwater Gardens"},
-  {"headline": "Burlington Considers Composting Bins on Every Downtown Block"},
-  {"headline": "Generator Maker Space Adds Sliding-Scale Memberships"},
-  {"headline": "Outdoor Gear Exchange Launches Rental Fleet for Winter Camping"},
-  {"headline": "Pomerleau Family Foundation Funds New Boathouse for High School Rowers"},
-  {"headline": "Burlington's First 'Library of Things' Opens Inside Fletcher Free"},
-  {"headline": "Marketplace Garage Rooftop to Host Summer Movie Nights"},
-  {"headline": "Vermont Green FC Season Tickets Sell Out in Record Time"},
-  {"headline": "City Weighs Extending Church Street Marketplace One Block South"},
-  {"headline": "Great Harvest Bread Owner Hands Keys to Longtime Head Baker"},
-  {"headline": "Burlington Approves Micro-Unit Apartment Building Near UVM Campus"},
-  {"headline": "Ethan Allen Homestead Adds Weekly Colonial Baking Demonstrations"},
-  {"headline": "Kestrel Coffee Opens Drive-Up Window for Bike Commuters"},
-  {"headline": "Vermont's Largest Community Solar Array Sells Out of Shares in a Week"},
-  {"headline": "New Skating Trail Through Waterfront Park Planned for January"},
-  {"headline": "Boys & Girls Club Teen Center Renovation Finishes Ahead of Schedule"},
-  {"headline": "Burlington Traffic Signals to Get Leading Pedestrian Intervals Citywide"},
-  {"headline": "Stone Soup Reopens With Cooperative Ownership Model"},
-  {"headline": "Airport Park in Colchester Adds Vermont's First Wheelchair-Accessible Treehouse"},
-  {"headline": "Sailing Center's 'Learn to Ice Boat' Class Sells Out in Hours"},
-  {"headline": "Burlington Eyes Former Rail Yard for Riverside Dog Park"},
-  {"headline": "Chittenden Emergency Food Shelf Breaks Ground on Bigger Kitchen"},
-  {"headline": "Juniper Bar to Host Monthly Vermont Author Reading Series"},
-  {"headline": "Old North End Ramen Pop-Up Signs Lease for Permanent Spot on North Street"},
-  {"headline": "Burlington Approves Curbside Textile Recycling Pickup Pilot"},
-  {"headline": "Champlain Valley Fair Adds Second Weekend for 100th Anniversary"},
-  {"headline": "Pine Street Barge Canal Path Connection Finally Fully Paved"},
-  {"headline": "Vermont Brewers Festival Moves to Two Weekends After Ticket Crush"},
-  {"headline": "Front Porch Forum Adds Neighborhood Tool-Lending Feature"},
-  {"headline": "Burlington's Overnight Warming Shelter to Stay Open Through April"},
-  {"headline": "Myers Bagels Firewood Supplier Retires; Search for Maple Begins"},
-  {"headline": "New Pedestrian Bridge Over the Winooski River Clears Final Permit"},
-  {"headline": "Community Health Centers Add Evening Dental Hours in the Old North End"},
-  {"headline": "Burlington Considers Renaming Battery Park Extension After Local Abenaki Leader"},
-  {"headline": "Smalley Park Ice Rink Volunteers Win City Recognition Award"},
-  {"headline": "Cannabis Retailers Ask City for Church Street Marketplace Zoning Change"},
-  {"headline": "Regional School Districts Weigh Shared Bus Mechanic Training Program"},
-  {"headline": "Burlington Bathhouse Revival Proposed for North Beach's Historic Building"},
-  {"headline": "Vermont Fresh Network Names Its First Burlington Food Truck Member"},
-  {"headline": "Winooski Weighs Four-Day Workweek for City Employees"},
-  {"headline": "Downtown Alliance Hires First-Ever Nighttime Economy Manager"},
-  {"headline": "Burlington's Snow Farm Vineyard Concerts Move to Larger Field"},
-  {"headline": "UVM Researchers Tag Record Number of Lake Sturgeon This Spring"},
-  {"headline": "Handy's Lunch Adds Saturday Hours for First Time in 20 Years"},
-  {"headline": "Mansfield Summit Shuttle Expands After Parking Lot Gridlock"},
-  {"headline": "Burlington Weighs Deconstruction-Over-Demolition Rule for Old Homes"},
-  {"headline": "Shelburne Orchards Cider Donut Line Tops Two Hours on Peak Weekend"},
-  {"headline": "New Mural Under the Main Street Rail Bridge Celebrates Lake Rescues"},
-  {"headline": "Vermont Comedy Club Adds Sunday Showcase for Local Newcomers"},
-  {"headline": "Burlington Approves Slower Speed Limit on All Neighborhood Streets"},
-  {"headline": "Charlotte's Quinlan Bridge Repairs Wrap a Month Early"},
-  {"headline": "Vermont Institute of Natural Science Brings Raptor Show to ECHO"},
-  {"headline": "North Winooski Avenue Businesses Form First Neighborhood Merchants Group"},
-  {"headline": "Burlington Eyes Heated Bus Shelters for Five Busiest Stops"},
-  {"headline": "Healthy Living Adds Refill Station for Vermont-Made Cleaning Products"},
-  {"headline": "New Trail Connects Centennial Woods to East Woods Preserve"},
-  {"headline": "Preservation Group Buys Endangered Round Barn, Plans Move to Shelburne"},
-  {"headline": "Burlington's Community Boathouse to Add Winter Sauna Village"},
-  {"headline": "Middlebury Natural Foods Co-op Partners on Burlington Delivery Route"},
-  {"headline": "Church Street Leases Fill to Highest Occupancy in a Decade"},
-  {"headline": "Vermont Green FC and Lake Monsters Announce Shared Season Pass"},
-  {"headline": "Burlington Parks to Pilot Free Snowshoe Lending at Leddy Lodge"},
-  {"headline": "Butch + Babe's Alums Open Neighborhood Spot in Winooski"},
-  {"headline": "State Grant Funds Oral History Project in Burlington's Refugee Communities"},
-  {"headline": "Burlington Weighs Requiring Snow Clearing Within 24 Hours of Storms"},
-  {"headline": "Malletts Bay Ice Fishing Derby Draws Largest Field in Its History"},
-  {"headline": "Radio Bean Marks 25 Years With 25-Hour Continuous Show"},
-  {"headline": "New Owners Promise Nothing Changes at Beloved Intervale Farm Stand"},
-  {"headline": "Burlington Approves Its First Permanent Parklet Program for Restaurants"},
-  {"headline": "Vermont Ski Areas Report Best February Since 2015"},
-  {"headline": "Dealer.com Campus Adds Public Cafe Facing the Bike Path"},
-  {"headline": "Winooski's Waterworks Park to Get Riverside Amphitheater"},
-  {"headline": "Burlington Considers Free Transit for All High School Students"},
-  {"headline": "Barrio Bakery Expands Into Weekend Pizza Nights"},
-  {"headline": "Frog Hollow Craft Center Launches Apprenticeship With Local High Schools"},
-  {"headline": "New Winter Market Fills Memorial Auditorium's Ground Floor"},
-  {"headline": "Burlington Street Sweeping Alerts Now Available by Text"},
-  {"headline": "Catamount Trail Association Maps First Urban Ski Route Through Burlington"},
-  {"headline": "Old North End Bakery's 'Pay It Forward' Bread Board Goes Citywide"},
-  {"headline": "Burlington Approves Rooftop Greenhouse for Downtown Senior Housing"},
-  {"headline": "Vermont's Last Blockbuster Card Collection Donated to Historical Society"},
-  {"headline": "Shelburne Bay Boat Launch to Add Invasive Species Wash Station"},
-  {"headline": "Burlington Explores City-Run Sidewalk Snowplow Fleet Expansion"},
-  {"headline": "Poultney Native Wins National Barista Championship for Burlington Cafe"},
-  {"headline": "New Nordic Skiing Loop Groomed Nightly at the Intervale"},
-  {"headline": "Burlington Weighs Banning New Drive-Throughs Citywide"},
-  {"headline": "Lake Champlain Ferries Add Bike-Priority Boarding Lane"},
-  {"headline": "CSWD Drop-Off Centers to Accept Paint and Electronics Every Day"},
-  {"headline": "Church Street Street Pianos Return With Weatherproof Upgrade"},
-  {"headline": "Burlington's First Cat Cafe Clears Health Inspection, Sets Opening Date"},
-  {"headline": "Rice Memorial Gym Floor Rebuilt With Wood From Local Storm Falls"},
-  {"headline": "City Council Backs Plan to Daylight Buried Section of Englesby Brook"},
-  {"headline": "Vermont Maple Festival Adds Burlington Satellite Tasting Event"},
-  {"headline": "New North End Pop-Up Library Kiosks Stocked by Neighbors"},
-  {"headline": "Burlington Airport's Therapy Dog Program Expands to Nightly Shifts"},
-  {"headline": "Waterfront Park Adds Free Beach Wheelchair Reservations"},
-  {"headline": "Winooski Community Kitchen Incubator Graduates First Ten Food Businesses"},
-  {"headline": "Burlington Approves Traffic-Calmed 'School Streets' at Three Elementaries"},
-  {"headline": "Champlain Islands Farm Trail Draws Record Cycling Tourism"},
-  {"headline": "Junktiques Warehouse Sale Moves to Fairgrounds After Overflow Crowds"},
-  {"headline": "Burlington Weighs Municipal Broadband Expansion Into Winooski"},
-  {"headline": "Local Divers Complete Underwater Cleanup of Burlington Harbor"},
-  {"headline": "Elm Street Coffee Cart Owner Buys the Building He Started In"},
-  {"headline": "Vermont Youth Orchestra to Tour Every County in One Summer"},
-  {"headline": "Burlington's Oldest Barber Shop Adds Third Generation to the Chair"},
-  {"headline": "New Pump Track at Calahan Park Opens to Riders of All Ages"},
-  {"headline": "Vermont Flannel Company Opens Church Street Flagship With Repair Bar"},
-  {"headline": "Burlington Pilot Turns Parking Spaces Into Winter Ski Racks Downtown"},
-  {"headline": "Georgia Mountain Wind Project Offers Community Ownership Shares"},
-  {"headline": "Old North End Night Market Extends Season Through October"},
-  {"headline": "Burlington Public Works Tests Beet Juice Brine on Icy Hills"},
-  {"headline": "Stowe Street Arts Festival Expands to Two Days After Record Turnout"},
-  {"headline": "Burlington Considers Odd-Even Watering Schedule After Dry June"},
-  {"headline": "Zabby & Elf's Stone Soup Cookbook Tops Local Bestseller List"},
-  {"headline": "New Ice Cream Trail Map Links Twelve Chittenden County Creemee Stands"},
-  {"headline": "Burlington High School Sailing Team Wins New England Title"},
-  {"headline": "Salaam Boutique Marks 30 Years on Church Street With Vintage Retrospective"},
-  {"headline": "City Approves Quiet Zone for Train Horns Through Downtown Burlington"},
-  {"headline": "Vermont Public Puts Entire Local Archive Online for Free"},
-  {"headline": "Burlington Bread Project Revives Wood-Fired Community Oven in the Intervale"},
-  {"headline": "South End Truck Stop Food Court Adds Winter Igloo Seating"},
-  {"headline": "Vermont's First Solar-Powered Ski Tow Opens at Cochran's"},
-  {"headline": "Burlington Weighs Free Compost Bin for Every Household"},
-  {"headline": "Leunig's Sidewalk Piano Player Marks 20 Years of Lunchtime Sets"},
-  {"headline": "New Wayfinding Signs Point Walkers From Downtown to the Intervale"},
-  {"headline": "Burlington Launches Map of Every Public Drinking Fountain"},
-  {"headline": "Colchester Causeway Repairs Finish in Time for Bike Ferry Season"},
-  {"headline": "Vermont Lake Monsters Mascot Champ Gets First Redesign in 20 Years"},
-  {"headline": "Church Street Marketplace Pilots Sensory-Friendly Shopping Hours"},
-  {"headline": "Burlington's Tiny Thai Institution Expands Into Neighboring Storefront"},
-  {"headline": "UVM Opens Its Climbing Wall to Community Members on Sundays"},
-  {"headline": "New Bus Route Links Old North End Directly to UVM Medical Center"},
-  {"headline": "Burlington Weighs 'Dark Sky' Rules for Downtown Building Lights"},
-  {"headline": "Pine Street Deli Reopens Under Employees Who Bought It Together"},
-  {"headline": "Queen City Dyeworks Turns Invasive Plants Into Local Yarn Line"},
-  {"headline": "Burlington Approves Winter Village of Heated Vendor Cabins on the Waterfront"},
-  {"headline": "Mallets Bay Ice Shanty Village Gets Official Town Mailbox"},
-  {"headline": "New Deal Lets Library Card Holders Borrow State Park Day Passes"},
-  {"headline": "Burlington Names Its First Poet Laureate in a Decade"},
-  {"headline": "Silver Palace Building's New Owners Promise Dim Sum Sundays Return"},
-  {"headline": "Vermont Green FC Adds Free Bike Valet at All Home Matches"},
-  {"headline": "Burlington Rolls Out Adopt-a-Storm-Drain Program With Naming Rights"},
-  {"headline": "Shelburne Vineyard Hosts First Statewide Natural Wine Fair"},
-  {"headline": "North Street Businesses Launch Multilingual Restaurant Week"},
-  {"headline": "Burlington Skatepark Adds Beginner Bowl Designed With Local Kids"},
-  {"headline": "Historic Follett House to Reopen as Maritime Museum and Cafe"},
-  {"headline": "Vermont's Biggest Puzzle Swap Outgrows the Elks Club"},
-  {"headline": "Burlington Weighs Requiring EV Chargers in All New Parking Garages"},
-  {"headline": "Lawson's Finest Taproom Donation Program Passes $1 Million Mark"},
-  {"headline": "New Cross-Country Ski Loop Lit by Solar Lanterns at Leddy Park"},
-  {"headline": "Burlington's Retired Parking Enforcement Scooter Sells at Charity Auction"},
-  {"headline": "Winooski Approves Riverfront Boardwalk Connecting Both Bridges"},
-  {"headline": "Local Sailors Rescue Loon Family During Fourth of July Fireworks"},
-  {"headline": "Burlington Adds Free Period Products to All City Buildings"},
-  {"headline": "Champlain College Game Studio Ships Title Set in a Fictional Vermont Town"},
-  {"headline": "Kite Festival Returns to Oakledge Park After Five-Year Pause"}
+  {
+    "headline": "Church Street Marketplace to Pilot Heated Bricks Along Top Block This Winter"
+  },
+  {
+    "headline": "Burlington City Council Weighs Permit System for Downtown Buskers"
+  },
+  {
+    "headline": "New Winooski Roundabout Mural Delayed After Paint Fails Cold-Weather Test"
+  },
+  {
+    "headline": "UVM Study Finds Lake Champlain Ice Cover at Second-Lowest Level on Record"
+  },
+  {
+    "headline": "Pine Street Coffee Roaster Expands Into Former Auto Garage"
+  },
+  {
+    "headline": "City Market Considers 24-Hour Pilot at Downtown Store"
+  },
+  {
+    "headline": "Burlington Explores Composting Program for Church Street Food Vendors"
+  },
+  {
+    "headline": "Old North End Community Fridge Network Adds Fourth Location"
+  },
+  {
+    "headline": "South End Arts Collective Loses Lease as Pine Street Rents Climb"
+  },
+  {
+    "headline": "Vermont Lawmakers Consider Statewide Ban on Parking Lot Leaf Blowers"
+  },
+  {
+    "headline": "Leddy Park Arena to Close Two Months for Dehumidification Overhaul"
+  },
+  {
+    "headline": "North Beach Campground Reservations Sell Out in Under an Hour"
+  },
+  {
+    "headline": "Burlington Schools Pilot Later Start Times at Two Elementary Schools"
+  },
+  {
+    "headline": "Winooski Bridge Repainting Project Pushed to Spring After Bid Comes In High"
+  },
+  {
+    "headline": "ECHO Center Announces Overnight 'Science Sleepover' Series for Adults"
+  },
+  {
+    "headline": "Battery Park Bandshell to Get Solar Roof Under New City Plan"
+  },
+  {
+    "headline": "Intervale Center Adds Weekly Gleaning Shifts as Demand Doubles"
+  },
+  {
+    "headline": "BTV Airport Adds Nonstop Service to Nashville Starting in May"
+  },
+  {
+    "headline": "Green Mountain Transit Tests On-Demand Evening Shuttle in the New North End"
+  },
+  {
+    "headline": "Burlington Bike Path Detour Planned Near Oakledge Through October"
+  },
+  {
+    "headline": "Shelburne Museum Extends Hours for First-Ever Winter Lantern Festival"
+  },
+  {
+    "headline": "Flynn Announces Free Ticket Program for First-Time Theatergoers"
+  },
+  {
+    "headline": "Nectar's Launches Monthly All-Vinyl Gravy Fries Happy Hour"
+  },
+  {
+    "headline": "Burlington Farmers Market Weighs Move Back to City Hall Park"
+  },
+  {
+    "headline": "Colchester Approves Funding for Malletts Bay Shoreline Boardwalk Study"
+  },
+  {
+    "headline": "Essex Junction Train Station to Add Heated Waiting Room by December"
+  },
+  {
+    "headline": "Vermont Green FC Announces Youth Clinic Series at Virtue Field"
+  },
+  {
+    "headline": "Lake Monsters to Trial Reusable Cup Deposit System at Centennial Field"
+  },
+  {
+    "headline": "UVM Medical Center Opens Walk-In Clinic for Winter Sports Injuries"
+  },
+  {
+    "headline": "Burlington Electric Offers Rebates for E-Cargo Bikes Used by Local Businesses"
+  },
+  {
+    "headline": "City Council Debates Whether Food Trucks Can Overwinter in Battery Park"
+  },
+  {
+    "headline": "New Moran Frame Programming to Include Saturday Morning Yoga Series"
+  },
+  {
+    "headline": "Burlington Parks Department Hiring 'Goose Deterrence Team' for Waterfront"
+  },
+  {
+    "headline": "Church Street Toy Shop Owner Retires After Three Decades on the Bricks"
+  },
+  {
+    "headline": "Winooski Food Co-op Concept Clears First Organizing Hurdle"
+  },
+  {
+    "headline": "Old Spokes Home Expands Free Bike Repair Nights to Twice Weekly"
+  },
+  {
+    "headline": "Burlington Considers Permit-Only Parking Around Callahan Park"
+  },
+  {
+    "headline": "Vermont Symphony Orchestra to Play Free Show on the Waterfront in August"
+  },
+  {
+    "headline": "CityPlace Developers Promise Ground-Floor Grocery in Next Phase"
+  },
+  {
+    "headline": "UVM Students Launch Late-Night Creemee Delivery Service"
+  },
+  {
+    "headline": "Rock Point School Opens Its Trails to Public on Weekends"
+  },
+  {
+    "headline": "Red Rocks Park to Cap Summer Weekend Visitors After Parking Complaints"
+  },
+  {
+    "headline": "Burlington's Last Video Rental Shelf Finds New Home at Fletcher Free Library"
+  },
+  {
+    "headline": "Sandbar State Park Adds Adaptive Kayak Launch"
+  },
+  {
+    "headline": "Hula Campus Announces Coworking Scholarship for Climate Startups"
+  },
+  {
+    "headline": "Burlington High School Robotics Team Headed to World Championships"
+  },
+  {
+    "headline": "Homeport to Anchor New Home-Goods Cooperative on Church Street"
+  },
+  {
+    "headline": "Muddy Waters Regulars Petition to Save Cafe's Iconic Couch"
+  },
+  {
+    "headline": "Burlington Country Club Faces Pushback Over Proposed Housing on Back Nine"
+  },
+  {
+    "headline": "Vermont Everyone Eats Program Gets One-Year Extension From Lawmakers"
+  },
+  {
+    "headline": "Ski Rack Adds Ski-Commuter Storage Lockers for Downtown Workers"
+  },
+  {
+    "headline": "Burlington Weighs Turning Elmwood Avenue Lot Into Pocket Park"
+  },
+  {
+    "headline": "Champlain College Pilots Tuition Discount for Vermont Gap-Year Students"
+  },
+  {
+    "headline": "Grand Isle Ferry Adds Sunrise Runs for Commuters"
+  },
+  {
+    "headline": "Local Motion Proposes Protected Bike Lane for Full Length of North Avenue"
+  },
+  {
+    "headline": "Burlington Firefighters Calendar Raises Record Sum for Camp Ta-Kum-Ta"
+  },
+  {
+    "headline": "New Owner Reopens Beloved New North End Diner With Same Menu, Same Booths"
+  },
+  {
+    "headline": "Vermont Teddy Bear Factory Tour Adds 'Repair Shop' Exhibit"
+  },
+  {
+    "headline": "Burlington Wastewater Upgrade Wins Federal Grant, Trims Rate Hike"
+  },
+  {
+    "headline": "Oakledge Treehouse to Get Accessibility Upgrade This Fall"
+  },
+  {
+    "headline": "Winooski High Students Win National Award for Multilingual News Podcast"
+  },
+  {
+    "headline": "Pearl Street Diner Brings Back Overnight Hours for First Time Since 2020"
+  },
+  {
+    "headline": "Burlington Launches Snow-Shoveling Match Program for Elderly Residents"
+  },
+  {
+    "headline": "Queen City Brewery Collaboration Beer to Fund Bike Path Benches"
+  },
+  {
+    "headline": "Fletcher Free Library Eliminates All Late Fines Permanently"
+  },
+  {
+    "headline": "Burlington Telecom Expands Fiber to Final Unserved Blocks in the South End"
+  },
+  {
+    "headline": "Perkins Pier Redesign Adds Kayak Storage and Swim Steps"
+  },
+  {
+    "headline": "Vermont Foodbank Opens Satellite Distribution Hub in Former Winooski Mill Space"
+  },
+  {
+    "headline": "Mount Philo Sunrise Crowds Prompt New Reservation System"
+  },
+  {
+    "headline": "Burlington to Replace Downtown Parking Meters With Pay-by-Plate Kiosks"
+  },
+  {
+    "headline": "Shelburne Farms Cheese Wins Top Honors at International Competition"
+  },
+  {
+    "headline": "New Bagel Shop in Former Bank Building Keeps the Vault as Seating"
+  },
+  {
+    "headline": "Charlotte Beach Weighs First-Ever Nonresident Parking Fee"
+  },
+  {
+    "headline": "UVM Extension Launches Backyard Sugaring Course After Waitlist Triples"
+  },
+  {
+    "headline": "Burlington's Great Streets Project Turns to King Street This Spring"
+  },
+  {
+    "headline": "Higher Ground Books First Show for New Waterfront Venue"
+  },
+  {
+    "headline": "City Hall Park Fountain to Run on Recycled Rainwater After Retrofit"
+  },
+  {
+    "headline": "Milton Approves Vermont's Largest Municipal Solar Array"
+  },
+  {
+    "headline": "Thirty-Year-Old Church Street Pretzel Cart Passes to Founder's Daughter"
+  },
+  {
+    "headline": "Burlington Dog Owners Push for Winter Hours at Starr Farm Dog Park"
+  },
+  {
+    "headline": "Vermont Pub & Brewery Revives Original 1988 Recipe for Anniversary Batch"
+  },
+  {
+    "headline": "North Avenue Alliance Calls for Traffic Study Before Next Housing Phase"
+  },
+  {
+    "headline": "Burlington Curling Club Breaks Ground on First Dedicated Ice Shed"
+  },
+  {
+    "headline": "Chittenden County Towns Weigh Shared Composting Facility"
+  },
+  {
+    "headline": "Waterfront Skate Park Expansion Wins Tony Hawk Foundation Grant"
+  },
+  {
+    "headline": "Zero Gravity Taproom to Host Weekly Repair Cafe in Off-Season"
+  },
+  {
+    "headline": "Burlington Considers 'Snow Day' Fare-Free Buses After Pilot Success"
+  },
+  {
+    "headline": "St. Michael's College Opens Its Observatory to the Public Monthly"
+  },
+  {
+    "headline": "Winooski's Rotary Roundabout Named Among Nation's Busiest Single-Lane Circles"
+  },
+  {
+    "headline": "Kids' Bike Swap at Old Spokes Home Outgrows Its Parking Lot"
+  },
+  {
+    "headline": "Burlington Bagel Institute Opens on Riverside Avenue With Sourdough-Only Menu"
+  },
+  {
+    "headline": "Vermont's First Indoor Pickleball Barn Opens in Williston"
+  },
+  {
+    "headline": "Church Street Ambassadors Program Doubles in Size for Summer"
+  },
+  {
+    "headline": "New Ferry-to-Bikepath Pass Bundles Crossing and Rental in One Ticket"
+  },
+  {
+    "headline": "South Burlington Weighs Scented-Product Ban for City Buildings"
+  },
+  {
+    "headline": "Hinesburg Farm Stand Goes Fully Honor-System, Sales Go Up"
+  },
+  {
+    "headline": "Burlington Rec Department Adds Adult Kickball After 400-Person Waitlist"
+  },
+  {
+    "headline": "Maglianero Reopens as Worker-Owned Cafe After Yearlong Campaign"
+  },
+  {
+    "headline": "Salvation Farms Expands Surplus Crop Program to Chittenden County"
+  },
+  {
+    "headline": "Burlington Weighs Requiring Bike Parking at All New Apartment Buildings"
+  },
+  {
+    "headline": "Lake Champlain Chocolates Debuts Maple Creemee Truffle for Summer Only"
+  },
+  {
+    "headline": "Chubby Muffin Late-Night Window Returns After Two-Year Hiatus"
+  },
+  {
+    "headline": "Burlington Approves First Car-Free Residential Development Near Downtown"
+  },
+  {
+    "headline": "Vermont Railway to Test Weekend Excursion Trains to Middlebury"
+  },
+  {
+    "headline": "New North End Little League Fields to Get Lights After Decade of Fundraising"
+  },
+  {
+    "headline": "Speeder & Earl's Brings Back Punch Cards by Popular Demand"
+  },
+  {
+    "headline": "Burlington Housing Authority Converts Downtown Motel Into Studio Apartments"
+  },
+  {
+    "headline": "Shelburne Road Corridor Study Recommends Center-Running Bus Lanes"
+  },
+  {
+    "headline": "UVM Dairy Bar Reopens for Summer With Student-Invented Flavors"
+  },
+  {
+    "headline": "Winooski Launches Multilingual Small-Business Grant Round"
+  },
+  {
+    "headline": "Adirondack Views Drive Record Season for Sunset Cruise Operators"
+  },
+  {
+    "headline": "Burlington Considers Banning Right Turns on Red Downtown"
+  },
+  {
+    "headline": "Green Up Day Sets Statewide Record for Volunteer Turnout"
+  },
+  {
+    "headline": "August First Expands Bakery After Buying Neighboring Storefront"
+  },
+  {
+    "headline": "City Council Approves Public Bathroom Pilot for Waterfront Park"
+  },
+  {
+    "headline": "Burlington Beekeepers Association Installs Hives on City Hall Roof"
+  },
+  {
+    "headline": "Ri Ra Building's New Tenant Promises to Keep the Snug Intact"
+  },
+  {
+    "headline": "Vermont Community Garden Network Reports Longest Waitlists Ever"
+  },
+  {
+    "headline": "Starr Farm Community Sailing Center Adds Free Youth Program"
+  },
+  {
+    "headline": "Burlington to Study Congestion Pricing for Waterfront Parking Lots"
+  },
+  {
+    "headline": "Mater Christi Campus Redevelopment Adds Senior Housing to Plan"
+  },
+  {
+    "headline": "Foam Brewers Patio Expansion Approved After Yearlong Permit Fight"
+  },
+  {
+    "headline": "Regional Dispatch Merger Brings Faster 911 Response Times, Data Shows"
+  },
+  {
+    "headline": "Burlington's Retired Fire Boat Finds Second Life as Floating Classroom"
+  },
+  {
+    "headline": "King Street Center Breaks Ground on Teen Workshop Wing"
+  },
+  {
+    "headline": "Vermont's Oldest General Store Adds EV Chargers Next to the Penny Candy"
+  },
+  {
+    "headline": "Bike Ferry Sets Single-Day Ridership Record Over Holiday Weekend"
+  },
+  {
+    "headline": "Burlington Weighs Letting Backyard Hens in All Residential Zones"
+  },
+  {
+    "headline": "ONE Arts Center Launches Pay-What-You-Can Music Lessons"
+  },
+  {
+    "headline": "Waterworks Building Adds Public Dock Slips for Restaurant Boaters"
+  },
+  {
+    "headline": "Hotel Vermont Rooftop Sauna Opens to Non-Guests on Weekdays"
+  },
+  {
+    "headline": "Essex Experience Adds Year-Round Indoor Farmers Market Hall"
+  },
+  {
+    "headline": "Burlington Piano Project Places Painted Uprights in Five Parks"
+  },
+  {
+    "headline": "Vermont Adaptive Expands Free Paddling Program at North Beach"
+  },
+  {
+    "headline": "Barge Canal Cleanup Enters Final Phase After Three Decades"
+  },
+  {
+    "headline": "Church Street's Oldest Bench Gets Historic Plaque and a Restoration"
+  },
+  {
+    "headline": "Burlington School District Adds Farm-to-School Coordinator Position"
+  },
+  {
+    "headline": "Petra Cliffs Plans Outdoor Climbing Tower Visible From the Interstate"
+  },
+  {
+    "headline": "New Community Land Trust Homes on North Avenue Sell by Lottery"
+  },
+  {
+    "headline": "Winooski Falls Overlook to Get Nighttime Lighting After Safety Review"
+  },
+  {
+    "headline": "Burlington Ranked Most Walkable Small City in the Northeast by Advocacy Group"
+  },
+  {
+    "headline": "Feldman's Bagels Adds Montreal-Style Wood-Fired Oven"
+  },
+  {
+    "headline": "Queen City Ghostwalk Adds Route Through the Old North End"
+  },
+  {
+    "headline": "Lake Champlain Sea Grant Funds Study of Urban Stormwater Gardens"
+  },
+  {
+    "headline": "Burlington Considers Composting Bins on Every Downtown Block"
+  },
+  {
+    "headline": "Generator Maker Space Adds Sliding-Scale Memberships"
+  },
+  {
+    "headline": "Outdoor Gear Exchange Launches Rental Fleet for Winter Camping"
+  },
+  {
+    "headline": "Pomerleau Family Foundation Funds New Boathouse for High School Rowers"
+  },
+  {
+    "headline": "Burlington's First 'Library of Things' Opens Inside Fletcher Free"
+  },
+  {
+    "headline": "Marketplace Garage Rooftop to Host Summer Movie Nights"
+  },
+  {
+    "headline": "Vermont Green FC Season Tickets Sell Out in Record Time"
+  },
+  {
+    "headline": "City Weighs Extending Church Street Marketplace One Block South"
+  },
+  {
+    "headline": "Great Harvest Bread Owner Hands Keys to Longtime Head Baker"
+  },
+  {
+    "headline": "Burlington Approves Micro-Unit Apartment Building Near UVM Campus"
+  },
+  {
+    "headline": "Ethan Allen Homestead Adds Weekly Colonial Baking Demonstrations"
+  },
+  {
+    "headline": "Kestrel Coffee Opens Drive-Up Window for Bike Commuters"
+  },
+  {
+    "headline": "Vermont's Largest Community Solar Array Sells Out of Shares in a Week"
+  },
+  {
+    "headline": "New Skating Trail Through Waterfront Park Planned for January"
+  },
+  {
+    "headline": "Boys & Girls Club Teen Center Renovation Finishes Ahead of Schedule"
+  },
+  {
+    "headline": "Burlington Traffic Signals to Get Leading Pedestrian Intervals Citywide"
+  },
+  {
+    "headline": "Stone Soup Reopens With Cooperative Ownership Model"
+  },
+  {
+    "headline": "Airport Park in Colchester Adds Vermont's First Wheelchair-Accessible Treehouse"
+  },
+  {
+    "headline": "Sailing Center's 'Learn to Ice Boat' Class Sells Out in Hours"
+  },
+  {
+    "headline": "Burlington Eyes Former Rail Yard for Riverside Dog Park"
+  },
+  {
+    "headline": "Chittenden Emergency Food Shelf Breaks Ground on Bigger Kitchen"
+  },
+  {
+    "headline": "Juniper Bar to Host Monthly Vermont Author Reading Series"
+  },
+  {
+    "headline": "Old North End Ramen Pop-Up Signs Lease for Permanent Spot on North Street"
+  },
+  {
+    "headline": "Burlington Approves Curbside Textile Recycling Pickup Pilot"
+  },
+  {
+    "headline": "Champlain Valley Fair Adds Second Weekend for 100th Anniversary"
+  },
+  {
+    "headline": "Pine Street Barge Canal Path Connection Finally Fully Paved"
+  },
+  {
+    "headline": "Vermont Brewers Festival Moves to Two Weekends After Ticket Crush"
+  },
+  {
+    "headline": "Front Porch Forum Adds Neighborhood Tool-Lending Feature"
+  },
+  {
+    "headline": "Burlington's Overnight Warming Shelter to Stay Open Through April"
+  },
+  {
+    "headline": "Myers Bagels Firewood Supplier Retires; Search for Maple Begins"
+  },
+  {
+    "headline": "New Pedestrian Bridge Over the Winooski River Clears Final Permit"
+  },
+  {
+    "headline": "Community Health Centers Add Evening Dental Hours in the Old North End"
+  },
+  {
+    "headline": "Burlington Considers Renaming Battery Park Extension After Local Abenaki Leader"
+  },
+  {
+    "headline": "Smalley Park Ice Rink Volunteers Win City Recognition Award"
+  },
+  {
+    "headline": "Cannabis Retailers Ask City for Church Street Marketplace Zoning Change"
+  },
+  {
+    "headline": "Regional School Districts Weigh Shared Bus Mechanic Training Program"
+  },
+  {
+    "headline": "Burlington Bathhouse Revival Proposed for North Beach's Historic Building"
+  },
+  {
+    "headline": "Vermont Fresh Network Names Its First Burlington Food Truck Member"
+  },
+  {
+    "headline": "Winooski Weighs Four-Day Workweek for City Employees"
+  },
+  {
+    "headline": "Downtown Alliance Hires First-Ever Nighttime Economy Manager"
+  },
+  {
+    "headline": "Burlington's Snow Farm Vineyard Concerts Move to Larger Field"
+  },
+  {
+    "headline": "UVM Researchers Tag Record Number of Lake Sturgeon This Spring"
+  },
+  {
+    "headline": "Handy's Lunch Adds Saturday Hours for First Time in 20 Years"
+  },
+  {
+    "headline": "Mansfield Summit Shuttle Expands After Parking Lot Gridlock"
+  },
+  {
+    "headline": "Burlington Weighs Deconstruction-Over-Demolition Rule for Old Homes"
+  },
+  {
+    "headline": "Shelburne Orchards Cider Donut Line Tops Two Hours on Peak Weekend"
+  },
+  {
+    "headline": "New Mural Under the Main Street Rail Bridge Celebrates Lake Rescues"
+  },
+  {
+    "headline": "Vermont Comedy Club Adds Sunday Showcase for Local Newcomers"
+  },
+  {
+    "headline": "Burlington Approves Slower Speed Limit on All Neighborhood Streets"
+  },
+  {
+    "headline": "Charlotte's Quinlan Bridge Repairs Wrap a Month Early"
+  },
+  {
+    "headline": "Vermont Institute of Natural Science Brings Raptor Show to ECHO"
+  },
+  {
+    "headline": "North Winooski Avenue Businesses Form First Neighborhood Merchants Group"
+  },
+  {
+    "headline": "Burlington Eyes Heated Bus Shelters for Five Busiest Stops"
+  },
+  {
+    "headline": "Healthy Living Adds Refill Station for Vermont-Made Cleaning Products"
+  },
+  {
+    "headline": "New Trail Connects Centennial Woods to East Woods Preserve"
+  },
+  {
+    "headline": "Preservation Group Buys Endangered Round Barn, Plans Move to Shelburne"
+  },
+  {
+    "headline": "Burlington's Community Boathouse to Add Winter Sauna Village"
+  },
+  {
+    "headline": "Middlebury Natural Foods Co-op Partners on Burlington Delivery Route"
+  },
+  {
+    "headline": "Church Street Leases Fill to Highest Occupancy in a Decade"
+  },
+  {
+    "headline": "Vermont Green FC and Lake Monsters Announce Shared Season Pass"
+  },
+  {
+    "headline": "Burlington Parks to Pilot Free Snowshoe Lending at Leddy Lodge"
+  },
+  {
+    "headline": "Butch + Babe's Alums Open Neighborhood Spot in Winooski"
+  },
+  {
+    "headline": "State Grant Funds Oral History Project in Burlington's Refugee Communities"
+  },
+  {
+    "headline": "Burlington Weighs Requiring Snow Clearing Within 24 Hours of Storms"
+  },
+  {
+    "headline": "Malletts Bay Ice Fishing Derby Draws Largest Field in Its History"
+  },
+  {
+    "headline": "Radio Bean Marks 25 Years With 25-Hour Continuous Show"
+  },
+  {
+    "headline": "New Owners Promise Nothing Changes at Beloved Intervale Farm Stand"
+  },
+  {
+    "headline": "Burlington Approves Its First Permanent Parklet Program for Restaurants"
+  },
+  {
+    "headline": "Vermont Ski Areas Report Best February Since 2015"
+  },
+  {
+    "headline": "Dealer.com Campus Adds Public Cafe Facing the Bike Path"
+  },
+  {
+    "headline": "Winooski's Waterworks Park to Get Riverside Amphitheater"
+  },
+  {
+    "headline": "Burlington Considers Free Transit for All High School Students"
+  },
+  {
+    "headline": "Barrio Bakery Expands Into Weekend Pizza Nights"
+  },
+  {
+    "headline": "Frog Hollow Craft Center Launches Apprenticeship With Local High Schools"
+  },
+  {
+    "headline": "New Winter Market Fills Memorial Auditorium's Ground Floor"
+  },
+  {
+    "headline": "Burlington Street Sweeping Alerts Now Available by Text"
+  },
+  {
+    "headline": "Catamount Trail Association Maps First Urban Ski Route Through Burlington"
+  },
+  {
+    "headline": "Old North End Bakery's 'Pay It Forward' Bread Board Goes Citywide"
+  },
+  {
+    "headline": "Burlington Approves Rooftop Greenhouse for Downtown Senior Housing"
+  },
+  {
+    "headline": "Vermont's Last Blockbuster Card Collection Donated to Historical Society"
+  },
+  {
+    "headline": "Shelburne Bay Boat Launch to Add Invasive Species Wash Station"
+  },
+  {
+    "headline": "Burlington Explores City-Run Sidewalk Snowplow Fleet Expansion"
+  },
+  {
+    "headline": "Poultney Native Wins National Barista Championship for Burlington Cafe"
+  },
+  {
+    "headline": "New Nordic Skiing Loop Groomed Nightly at the Intervale"
+  },
+  {
+    "headline": "Burlington Weighs Banning New Drive-Throughs Citywide"
+  },
+  {
+    "headline": "Lake Champlain Ferries Add Bike-Priority Boarding Lane"
+  },
+  {
+    "headline": "CSWD Drop-Off Centers to Accept Paint and Electronics Every Day"
+  },
+  {
+    "headline": "Church Street Street Pianos Return With Weatherproof Upgrade"
+  },
+  {
+    "headline": "Burlington's First Cat Cafe Clears Health Inspection, Sets Opening Date"
+  },
+  {
+    "headline": "Rice Memorial Gym Floor Rebuilt With Wood From Local Storm Falls"
+  },
+  {
+    "headline": "City Council Backs Plan to Daylight Buried Section of Englesby Brook"
+  },
+  {
+    "headline": "Vermont Maple Festival Adds Burlington Satellite Tasting Event"
+  },
+  {
+    "headline": "New North End Pop-Up Library Kiosks Stocked by Neighbors"
+  },
+  {
+    "headline": "Burlington Airport's Therapy Dog Program Expands to Nightly Shifts"
+  },
+  {
+    "headline": "Waterfront Park Adds Free Beach Wheelchair Reservations"
+  },
+  {
+    "headline": "Winooski Community Kitchen Incubator Graduates First Ten Food Businesses"
+  },
+  {
+    "headline": "Burlington Approves Traffic-Calmed 'School Streets' at Three Elementaries"
+  },
+  {
+    "headline": "Champlain Islands Farm Trail Draws Record Cycling Tourism"
+  },
+  {
+    "headline": "Junktiques Warehouse Sale Moves to Fairgrounds After Overflow Crowds"
+  },
+  {
+    "headline": "Burlington Weighs Municipal Broadband Expansion Into Winooski"
+  },
+  {
+    "headline": "Local Divers Complete Underwater Cleanup of Burlington Harbor"
+  },
+  {
+    "headline": "Elm Street Coffee Cart Owner Buys the Building He Started In"
+  },
+  {
+    "headline": "Vermont Youth Orchestra to Tour Every County in One Summer"
+  },
+  {
+    "headline": "Burlington's Oldest Barber Shop Adds Third Generation to the Chair"
+  },
+  {
+    "headline": "New Pump Track at Calahan Park Opens to Riders of All Ages"
+  },
+  {
+    "headline": "Vermont Flannel Company Opens Church Street Flagship With Repair Bar"
+  },
+  {
+    "headline": "Burlington Pilot Turns Parking Spaces Into Winter Ski Racks Downtown"
+  },
+  {
+    "headline": "Georgia Mountain Wind Project Offers Community Ownership Shares"
+  },
+  {
+    "headline": "Old North End Night Market Extends Season Through October"
+  },
+  {
+    "headline": "Burlington Public Works Tests Beet Juice Brine on Icy Hills"
+  },
+  {
+    "headline": "Stowe Street Arts Festival Expands to Two Days After Record Turnout"
+  },
+  {
+    "headline": "Burlington Considers Odd-Even Watering Schedule After Dry June"
+  },
+  {
+    "headline": "Zabby & Elf's Stone Soup Cookbook Tops Local Bestseller List"
+  },
+  {
+    "headline": "New Ice Cream Trail Map Links Twelve Chittenden County Creemee Stands"
+  },
+  {
+    "headline": "Burlington High School Sailing Team Wins New England Title"
+  },
+  {
+    "headline": "Salaam Boutique Marks 30 Years on Church Street With Vintage Retrospective"
+  },
+  {
+    "headline": "City Approves Quiet Zone for Train Horns Through Downtown Burlington"
+  },
+  {
+    "headline": "Vermont Public Puts Entire Local Archive Online for Free"
+  },
+  {
+    "headline": "Burlington Bread Project Revives Wood-Fired Community Oven in the Intervale"
+  },
+  {
+    "headline": "South End Truck Stop Food Court Adds Winter Igloo Seating"
+  },
+  {
+    "headline": "Vermont's First Solar-Powered Ski Tow Opens at Cochran's"
+  },
+  {
+    "headline": "Burlington Weighs Free Compost Bin for Every Household"
+  },
+  {
+    "headline": "Leunig's Sidewalk Piano Player Marks 20 Years of Lunchtime Sets"
+  },
+  {
+    "headline": "New Wayfinding Signs Point Walkers From Downtown to the Intervale"
+  },
+  {
+    "headline": "Burlington Launches Map of Every Public Drinking Fountain"
+  },
+  {
+    "headline": "Colchester Causeway Repairs Finish in Time for Bike Ferry Season"
+  },
+  {
+    "headline": "Vermont Lake Monsters Mascot Champ Gets First Redesign in 20 Years"
+  },
+  {
+    "headline": "Church Street Marketplace Pilots Sensory-Friendly Shopping Hours"
+  },
+  {
+    "headline": "Burlington's Tiny Thai Institution Expands Into Neighboring Storefront"
+  },
+  {
+    "headline": "UVM Opens Its Climbing Wall to Community Members on Sundays"
+  },
+  {
+    "headline": "New Bus Route Links Old North End Directly to UVM Medical Center"
+  },
+  {
+    "headline": "Burlington Weighs 'Dark Sky' Rules for Downtown Building Lights"
+  },
+  {
+    "headline": "Pine Street Deli Reopens Under Employees Who Bought It Together"
+  },
+  {
+    "headline": "Queen City Dyeworks Turns Invasive Plants Into Local Yarn Line"
+  },
+  {
+    "headline": "Burlington Approves Winter Village of Heated Vendor Cabins on the Waterfront"
+  },
+  {
+    "headline": "Mallets Bay Ice Shanty Village Gets Official Town Mailbox"
+  },
+  {
+    "headline": "New Deal Lets Library Card Holders Borrow State Park Day Passes"
+  },
+  {
+    "headline": "Burlington Names Its First Poet Laureate in a Decade"
+  },
+  {
+    "headline": "Silver Palace Building's New Owners Promise Dim Sum Sundays Return"
+  },
+  {
+    "headline": "Vermont Green FC Adds Free Bike Valet at All Home Matches"
+  },
+  {
+    "headline": "Burlington Rolls Out Adopt-a-Storm-Drain Program With Naming Rights"
+  },
+  {
+    "headline": "Shelburne Vineyard Hosts First Statewide Natural Wine Fair"
+  },
+  {
+    "headline": "North Street Businesses Launch Multilingual Restaurant Week"
+  },
+  {
+    "headline": "Burlington Skatepark Adds Beginner Bowl Designed With Local Kids"
+  },
+  {
+    "headline": "Historic Follett House to Reopen as Maritime Museum and Cafe"
+  },
+  {
+    "headline": "Vermont's Biggest Puzzle Swap Outgrows the Elks Club"
+  },
+  {
+    "headline": "Burlington Weighs Requiring EV Chargers in All New Parking Garages"
+  },
+  {
+    "headline": "Lawson's Finest Taproom Donation Program Passes $1 Million Mark"
+  },
+  {
+    "headline": "New Cross-Country Ski Loop Lit by Solar Lanterns at Leddy Park"
+  },
+  {
+    "headline": "Burlington's Retired Parking Enforcement Scooter Sells at Charity Auction"
+  },
+  {
+    "headline": "Winooski Approves Riverfront Boardwalk Connecting Both Bridges"
+  },
+  {
+    "headline": "Local Sailors Rescue Loon Family During Fourth of July Fireworks"
+  },
+  {
+    "headline": "Burlington Adds Free Period Products to All City Buildings"
+  },
+  {
+    "headline": "Champlain College Game Studio Ships Title Set in a Fictional Vermont Town"
+  },
+  {
+    "headline": "Kite Festival Returns to Oakledge Park After Five-Year Pause"
+  },
+  {
+    "headline": "City Council Weighs Overnight Parking Ban in the Old North End",
+    "generated": "2026-07-07"
+  },
+  {
+    "headline": "Pine Street Bakery Expands Into Former Auto Shop Space",
+    "generated": "2026-07-07"
+  },
+  {
+    "headline": "Church Street Marketplace Pilots New Vendor Cart Program",
+    "generated": "2026-07-07"
+  },
+  {
+    "headline": "Winooski River Access Plan Splits Neighbors at Public Forum",
+    "generated": "2026-07-07"
+  },
+  {
+    "headline": "UVM Adds Bike Share Stations Along Main Street Corridor",
+    "generated": "2026-07-07"
+  },
+  {
+    "headline": "Leddy Park Pool Closure Extended Into Next Summer",
+    "generated": "2026-07-07"
+  },
+  {
+    "headline": "CityPlace Developer Requests Second Deadline Extension From City Hall",
+    "generated": "2026-07-07"
+  },
+  {
+    "headline": "North Beach Erosion Prompts New Dune Grass Planting Effort",
+    "generated": "2026-07-07"
+  },
+  {
+    "headline": "Shelburne Road Motel Conversion for Housing Faces Zoning Hurdle",
+    "generated": "2026-07-07"
+  },
+  {
+    "headline": "Burlington School Board Debates Later Start Times for High Schoolers",
+    "generated": "2026-07-07"
+  }
 ]

@@ -118,11 +118,18 @@ if (!apiRes.ok) {
   process.exit(1);
 }
 const msg = await apiRes.json();
-const raw = (msg.content?.[0]?.text || '').trim().replace(/^```(?:json)?\s*|\s*```$/g, '');
+// content may lead with a thinking block; take the first text block
+const raw = (msg.content?.find((b) => b.type === 'text')?.text || '')
+  .trim().replace(/^```(?:json)?\s*|\s*```$/g, '');
+if (msg.stop_reason === 'max_tokens') { console.error('Claude response truncated'); process.exit(1); }
 
 let parsed;
 try { parsed = JSON.parse(raw); }
-catch { console.error('Claude output is not valid JSON:\n' + raw); process.exit(1); }
+catch {
+  console.error('Claude output is not valid JSON:\n' + raw);
+  console.error('full response: ' + JSON.stringify(msg).slice(0, 2000));
+  process.exit(1);
+}
 if (!Array.isArray(parsed)) { console.error('Claude output is not an array'); process.exit(1); }
 
 const newFakes = [];

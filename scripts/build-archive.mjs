@@ -39,21 +39,37 @@ export function looksLikeHeadline(t) {
   );
 }
 
+const externalOk = (href) =>
+  /^https?:\/\//.test(href) &&
+  !/btownbrief\.com|beehiiv\.com|forms\.gle|instagram\.com|reddit\.com/i.test(href);
+
 function extractHeadlines(html) {
-  // Slice from the "Local News" h2 to the next h1/h2 heading.
-  const start = html.search(/<h2[^>]*>(?:<[^>]+>)*[^<]*Local News/i);
-  if (start === -1) return [];
+  // Slice from the "Local News" heading (h1-h3 depending on era; the space is
+  // sometimes a non-breaking space, which \s covers) to the next heading.
+  const start = html.search(/<h[123][^>]*>(?:<[^>]+>)*[^<]*Local\sNews/i);
+  if (start === -1) return extractH1Stories(html);
   const rest = html.slice(start + 10);
-  const end = rest.search(/<h[12][^>]/i);
+  const end = rest.search(/<h[123][^>]/i);
   const section = end === -1 ? rest : rest.slice(0, end);
 
   const out = [];
   for (const m of section.matchAll(/<a[^>]*href="([^"]*)"[^>]*>([\s\S]*?)<\/a>/g)) {
-    const href = m[1];
-    const t = decode(m[2]);
     // Real stories link out to external press; skip anchors + own-site links.
-    if (!/^https?:\/\//.test(href)) continue;
-    if (/btownbrief\.com|beehiiv\.com|forms\.gle|instagram\.com|reddit\.com/i.test(href)) continue;
+    if (!externalOk(m[1])) continue;
+    const t = decode(m[2]);
+    if (looksLikeHeadline(t)) out.push(t);
+  }
+  return out;
+}
+
+// Earliest editions have no "Local News" heading: each story is an <h1>
+// wrapping an external link.
+function extractH1Stories(html) {
+  const out = [];
+  for (const b of html.matchAll(/<h1[^>]*>([\s\S]*?)<\/h1>/g)) {
+    const href = (b[1].match(/href="([^"]+)"/) || [])[1];
+    if (!href || !externalOk(decode(href))) continue;
+    const t = decode(b[1]);
     if (looksLikeHeadline(t)) out.push(t);
   }
   return out;

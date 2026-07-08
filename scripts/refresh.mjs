@@ -63,10 +63,11 @@ let body = (newest.match(/content:encoded>([\s\S]*?)<\/content:encoded>/) || [, 
   .replace(/^<!\[CDATA\[/, '').replace(/\]\]>$/, '');
 
 let added = 0;
-const start = body.search(/<h[12][^>]*>(?:<[^>]+>)*[^<]*Local News/i);
+// heading level varies by era, and "Local News" sometimes has a non-breaking space
+const start = body.search(/<h[123][^>]*>(?:<[^>]+>)*[^<]*Local\sNews/i);
 if (start !== -1) {
   const rest = body.slice(start + 10);
-  const end = rest.search(/<h[12][^>]/i);
+  const end = rest.search(/<h[123][^>]/i);
   const section = end === -1 ? rest : rest.slice(0, end);
   for (const m of section.matchAll(/<a[^>]*>([\s\S]*?)<\/a>/g)) {
     const t = decode(m[1]);

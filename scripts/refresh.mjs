@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // Weekly refresh for REAL OR FAKE: BTV HEADLINES.
 //
-// 1. Fetches the Btown Brief RSS feed and folds any new story headlines from
+// 1. Fetches the BTown Brief RSS feed and folds any new story headlines from
 //    the newest edition into data/real-headlines.json.
 // 2. Calls the Claude API to write 10 fresh fake headlines in the archive's
 //    tone (20 random real headlines as style examples) and appends them to
@@ -87,7 +87,7 @@ if (!apiKey) { console.error('ANTHROPIC_API_KEY not set'); process.exit(1); }
 const examples = [...real].sort(() => Math.random() - 0.5).slice(0, N_EXAMPLES)
   .map((x) => x.headline);
 
-const prompt = `You write fake local-news headlines for "Real or Fake: BTV Headlines", a game by the Btown Brief, a Burlington, Vermont newsletter. Players see real archive headlines next to fakes and must spot the fake — so your fakes must be indistinguishable in tone, length, and specificity.
+const prompt = `You write fake local-news headlines for "Real or Fake: BTV Headlines", a game by the BTown Brief, a Burlington, Vermont newsletter. Players see real archive headlines next to fakes and must spot the fake — so your fakes must be indistinguishable in tone, length, and specificity.
 
 Here are ${examples.length} REAL headlines from the archive as style examples:
 ${examples.map((h) => `- ${h}`).join('\n')}

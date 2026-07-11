@@ -2,7 +2,7 @@ name: Refresh headlines
 
 on:
   schedule:
-    # Btown Brief publishes Monday and Friday mornings (Eastern).
+    # BTown Brief publishes Monday and Friday mornings (Eastern).
     # 16:00 UTC = 12:00 EDT / 11:00 EST — the edition exists by then
     # in both daylight-saving regimes.
     - cron: '0 16 * * 1,5'

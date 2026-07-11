@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // One-time archive builder for REAL OR FAKE: BTV HEADLINES.
 //
-// Crawls every Btown Brief edition listed in the sitemap, extracts the
+// Crawls every BTown Brief edition listed in the sitemap, extracts the
 // story-level headlines from each edition's "Local News" section, and
 // writes them to data/real-headlines.json. Polite: one fetch at a time
 // with a delay. Run manually:  node scripts/build-archive.mjs

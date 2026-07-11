@@ -107,7 +107,7 @@ function reveal(cards, pickedBtn, pickedCard) {
       // THE discovery engine: date + inviting link to the archived story
       const d = c.date
         ? new Date(c.date + 'T12:00:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })
-        : 'Btown Brief';
+        : 'BTown Brief';
       meta.innerHTML = `<span class="when"></span> · <a target="_blank" rel="noopener">Read the story →</a>`;
       meta.querySelector('.when').textContent = `✓ Real — ${d}`;
       meta.querySelector('a').href = c.editionUrl;

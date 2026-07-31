@@ -37,9 +37,10 @@
     <h1 id="nameplate">REAL <span class="or">or</span> FAKE</h1>
     <div id="subplate">★ BTV HEADLINES ★ A BTOWN GAMES PRODUCTION ★</div>
     <div id="scorebar">
-      <span>STREAK <b id="streak">0</b></span>
-      <span>SCORE <b id="score">0</b></span>
+      <span id="streak-stat">STREAK <b id="streak">0</b></span>
+      <span id="score-stat">SCORE <b id="score">0</b><em id="score-multiplier" aria-hidden="true"></em></span>
       <span>BEST <b id="best">0</b></span>
+      <button id="mute" type="button" title="Turn sound on" aria-label="Turn sound on">🔇</button>
     </div>
   </header>
 
@@ -53,6 +54,7 @@
 
   <!-- Round screen -->
   <section id="round" class="screen hidden">
+    <div id="moment-banner" class="hidden" aria-hidden="true"></div>
     <div id="round-kicker">
       <span id="round-no"></span>
       <span id="round-task">FIND THE <b class="fake-word">FAKE</b></span>
@@ -68,6 +70,7 @@
   <section id="gameover" class="screen hidden">
     <div id="stamp">STOP THE PRESSES</div>
     <div id="final-line"></div>
+    <div class="death-break" aria-hidden="true"><span>EDITION ENDS HERE</span></div>
     <div class="go-score">
       <div id="final-score">0</div>
       <div class="go-label">FINAL SCORE</div>
@@ -99,6 +102,7 @@
     A Btown Games production · <a href="https://www.btownbrief.com" target="_blank" rel="noopener">Read the BTown Brief →</a>
   </footer>
 </div>
+<div id="announcer" class="sr-only" role="status" aria-live="assertive" aria-atomic="true"></div>
 <script type="module" src="js/main.js"></script>
 <script src="https://play.btownbrief.com/ticker.js" defer></script>
 </body>

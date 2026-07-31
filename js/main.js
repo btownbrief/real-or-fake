@@ -3,11 +3,14 @@ import { loadPools, drawRound, remainingReal, totalReal, oldestDate } from './da
 import {
   lbEnabled, getName, submitScore, renamePlayer, fetchTop, monthLabel, playerId,
 } from './leaderboard.js';
+import { initSoundToggle, playSound, stopSounds } from './audio.js';
 
 const $ = (id) => document.getElementById(id);
 const intro = $('intro'), roundScr = $('round'), overScr = $('gameover');
 const cardsEl = $('cards'), verdictEl = $('verdict'), verdictLine = $('verdict-line');
-const nextBtn = $('nextBtn');
+const nextBtn = $('nextBtn'), momentBanner = $('moment-banner');
+const scorebar = $('scorebar'), scoreEl = $('score'), multiplierEl = $('score-multiplier');
+const announcer = $('announcer');
 
 const BEST_KEY = 'btown-rof-best';        // best score
 const BEST_STREAK_KEY = 'btown-rof-best-streak';
@@ -23,11 +26,15 @@ let usedThisRun = new Set();
 let submittedThisRun = false;
 let best = Number(localStorage.getItem(BEST_KEY) || 0);
 let bestStreak = Number(localStorage.getItem(BEST_STREAK_KEY) || 0);
+let effectEpoch = 0;
+let effectTimers = new Set();
+let numberAnimation;
 
 $('ear-date').textContent = new Date().toLocaleDateString('en-US', {
   weekday: 'long', month: 'long', day: 'numeric', year: 'numeric',
 });
 $('best').textContent = best;
+initSoundToggle($('mute'));
 
 const toast = document.createElement('div');
 toast.id = 'toast';
@@ -42,8 +49,83 @@ function showToast(msg) {
 
 function paintScorebar() {
   $('streak').textContent = streak;
-  $('score').textContent = score;
+  scoreEl.textContent = score;
   $('best').textContent = best;
+  scorebar.classList.remove('heat-3', 'heat-5', 'heat-10');
+  if (streak >= 10) scorebar.classList.add('heat-10');
+  else if (streak >= 5) scorebar.classList.add('heat-5');
+  else if (streak >= 3) scorebar.classList.add('heat-3');
+}
+
+function reduceMotion() {
+  return window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+}
+
+function resetEffects() {
+  effectEpoch++;
+  for (const timer of effectTimers) clearTimeout(timer);
+  effectTimers = new Set();
+  stopSounds();
+  cancelAnimationFrame(numberAnimation);
+  numberAnimation = undefined;
+  scoreEl.textContent = score;
+  multiplierEl.className = '';
+  momentBanner.classList.add('hidden');
+  $('streak-stat').classList.remove('streak-hit');
+  announcer.textContent = '';
+  roundScr.classList.remove('inversion-intro', 'reveal-beat', 'wrong-answer');
+  overScr.classList.remove('resolution-enter');
+  $('paper').classList.remove('death-wash');
+}
+
+function scheduleEffect(fn, delay) {
+  const epoch = effectEpoch;
+  const timer = setTimeout(() => {
+    effectTimers.delete(timer);
+    if (epoch === effectEpoch) fn();
+  }, delay);
+  effectTimers.add(timer);
+}
+
+function announce(message) {
+  announcer.textContent = '';
+  scheduleEffect(() => { announcer.textContent = message; }, 20);
+}
+
+function animateNumber(element, from, to, duration) {
+  cancelAnimationFrame(numberAnimation);
+  if (reduceMotion() || from === to) {
+    element.textContent = to;
+    return;
+  }
+  const epoch = effectEpoch;
+  const started = performance.now();
+  const frame = (now) => {
+    if (epoch !== effectEpoch) return;
+    const progress = Math.min(1, (now - started) / duration);
+    const eased = 1 - ((1 - progress) ** 3);
+    element.textContent = Math.round(from + ((to - from) * eased));
+    if (progress < 1) numberAnimation = requestAnimationFrame(frame);
+  };
+  numberAnimation = requestAnimationFrame(frame);
+}
+
+function animateScore(previousScore, multiplier) {
+  animateNumber(scoreEl, previousScore, score, 500);
+  multiplierEl.textContent = `×${multiplier}`;
+  multiplierEl.className = reduceMotion() ? 'show static' : 'show';
+  scheduleEffect(() => { multiplierEl.className = ''; }, 900);
+}
+
+function markStreakMilestone() {
+  if (![3, 5, 10].includes(streak)) return;
+  const stat = $('streak-stat');
+  stat.classList.remove('streak-hit');
+  void stat.offsetWidth;
+  stat.classList.add('streak-hit');
+  announce(`${streak} in a row. Streak multiplier times ${streak}.`);
+  playSound('streak', streak);
+  scheduleEffect(() => stat.classList.remove('streak-hit'), 850);
 }
 
 function paintFlex() {
@@ -58,6 +140,7 @@ function paintFlex() {
 function isInverted() { return roundNo % INVERT_EVERY === 0; }
 
 function startRun() {
+  resetEffects();
   roundNo = 0;
   streak = 0;
   score = 0;
@@ -72,10 +155,11 @@ function startRun() {
 }
 
 function nextRound() {
+  resetEffects();
   roundNo++;
   const inverted = isInverted();
   const cards = inverted ? drawRound(1, 3, usedThisRun) : drawRound(3, 1, usedThisRun);
-  state = 'guessing';
+  state = inverted ? 'announcing' : 'guessing';
 
   $('round-no').textContent = `ROUND No. ${roundNo}`;
   $('round-task').innerHTML = inverted
@@ -95,6 +179,22 @@ function nextRound() {
     cardsEl.appendChild(b);
   }
   roundScr.scrollIntoView({ block: 'start' });
+
+  if (inverted) {
+    roundScr.classList.add('inversion-intro');
+    momentBanner.innerHTML = '<b>RULES FLIPPED!</b><span>Find the one real headline.</span>';
+    momentBanner.classList.remove('hidden');
+    announce(`Round ${roundNo}. Rules flipped. Find the one real headline.`);
+    playSound('inversion');
+    scheduleEffect(() => {
+      momentBanner.classList.add('hidden');
+      roundScr.classList.remove('inversion-intro');
+      state = 'guessing';
+      announce('Cards are ready. Find the one real headline.');
+    }, reduceMotion() ? 1100 : 850);
+  } else {
+    announce(`Round ${roundNo}. Find the fake headline.`);
+  }
 }
 
 function reveal(cards, pickedBtn, pickedCard) {
@@ -124,6 +224,8 @@ function pick(btn, card, cards, inverted) {
   if (state !== 'guessing') return;
   state = 'revealed';
   const correct = inverted ? card.real : !card.real;
+  const previousScore = score;
+  roundScr.classList.add('reveal-beat');
 
   if (correct) {
     streak++;
@@ -133,23 +235,36 @@ function pick(btn, card, cards, inverted) {
     reveal(cards, null, null);
     verdictLine.innerHTML = `<b class="good">CORRECT.</b> +${points} pts · read what really happened ↑`;
     nextBtn.textContent = 'NEXT ROUND →';
+    announce(`Correct. Plus ${points} points. Streak multiplier times ${streak}.`);
   } else {
     results.push('❌');
     reveal(cards, btn, card);
+    roundScr.classList.add('wrong-answer');
     verdictLine.innerHTML = inverted
       ? `<b class="bad">FAKE NEWS.</b> That one never happened — the real stories are worth a read ↑`
       : `<b class="bad">FOOLED.</b> That one really ran. The fake is stamped above.`;
     nextBtn.textContent = 'FINAL SCORE →';
+    announce(inverted
+      ? 'Wrong. That headline was fake. The run is over.'
+      : 'Wrong. That headline was real. The fake is now stamped. The run is over.');
   }
   paintScorebar();
+  if (correct) {
+    animateScore(previousScore, streak);
+    markStreakMilestone();
+  }
+  scheduleEffect(() => playSound('stamp'), 190);
+  scheduleEffect(() => playSound(correct ? 'correct' : 'wrong'), 360);
+  scheduleEffect(() => roundScr.classList.remove('reveal-beat'), 900);
   nextBtn.classList.remove('hidden');
   verdictEl.classList.remove('hidden');
-  verdictEl.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+  verdictEl.scrollIntoView({ block: 'nearest', behavior: reduceMotion() ? 'auto' : 'smooth' });
 }
 
 // ------------------------------------------------------------ game over
 
 function gameOver() {
+  resetEffects();
   state = 'over';
   const isBestScore = score > best;
   if (isBestScore) { best = score; localStorage.setItem(BEST_KEY, String(best)); }
@@ -159,13 +274,20 @@ function gameOver() {
   $('final-line').textContent = streak === 0
     ? 'Fooled on the first edition. The Brief awaits your re-read.'
     : `You spotted ${streak} fake${streak === 1 ? '' : 's'} before the news got you.`;
-  $('final-score').textContent = score;
+  $('final-score').textContent = reduceMotion() ? score : 0;
   const bl = $('best-line');
   bl.textContent = isBestScore ? '★ NEW BEST ★' : `Best: ${best} · Best streak: ${bestStreak}`;
   bl.className = isBestScore ? 'new-best' : '';
 
   roundScr.classList.add('hidden');
   overScr.classList.remove('hidden');
+  overScr.classList.add('resolution-enter');
+  $('paper').classList.add('death-wash');
+  animateNumber($('final-score'), 0, score, 650);
+  playSound('death');
+  announce(`Final score ${score}. ${streak} correct in a row.`);
+  scheduleEffect(() => $('paper').classList.remove('death-wash'), 700);
+  $('againBtn').focus({ preventScroll: true });
   updateLeaderboard(score);
 }
 

@@ -109,14 +109,12 @@ const apiRes = await fetch('https://openrouter.ai/api/v1/messages', {
     'content-type': 'application/json',
   },
   body: JSON.stringify({
-    // non-reasoning: GLM burns whole max_tokens budgets on thinking and the
-    // truncation check below hard-exits the workflow when it returns no text
+    // Non-reasoning by design: GLM burned whole max_tokens budgets on thinking
+    // and returned no text, which hard-exits this workflow at the check below.
+    // The reasoning cap is advisory, and only matters if MODEL is pointed back
+    // at a reasoning model.
     model: 'openai/gpt-4o-mini',
-    // GLM reasoning is mandatory on this endpoint and shares the max_tokens
-    // budget with the answer; headroom keeps the truncation check below honest.
     max_tokens: 4000,
-    // GLM reasoning cannot be disabled and shares the max_tokens budget;
-    // cap it so the answer always has room.
     reasoning: { max_tokens: 1024 },
     messages: [{ role: 'user', content: prompt }],
   }),

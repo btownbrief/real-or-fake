@@ -8,7 +8,7 @@
 //    data/fake-headlines.json.
 //
 // Hard validation everywhere; exits non-zero (so CI commits nothing) if the
-// generated fakes don't pass. Requires ANTHROPIC_API_KEY for step 2.
+// generated fakes don't pass. Requires OPENROUTER_API_KEY for step 2.
 //
 // No dependencies — plain Node 18+.
 
@@ -81,8 +81,8 @@ console.log(`${added} new real headlines from ${editionUrl}`);
 
 // ------------------------------------------------------------ 2. new fakes
 
-const apiKey = process.env.ANTHROPIC_API_KEY;
-if (!apiKey) { console.error('ANTHROPIC_API_KEY not set'); process.exit(1); }
+const apiKey = process.env.OPENROUTER_API_KEY;
+if (!apiKey) { console.error('OPENROUTER_API_KEY not set'); process.exit(1); }
 
 const examples = [...real].sort(() => Math.random() - 0.5).slice(0, N_EXAMPLES)
   .map((x) => x.headline);
@@ -101,7 +101,7 @@ Write exactly ${N_FAKES} NEW fake headlines. Rules:
 
 Reply with ONLY a JSON array of ${N_FAKES} strings. No prose, no code fences.`;
 
-const apiRes = await fetch('https://api.anthropic.com/v1/messages', {
+const apiRes = await fetch('https://openrouter.ai/api/v1/messages', {
   method: 'POST',
   headers: {
     'x-api-key': apiKey,
@@ -109,8 +109,13 @@ const apiRes = await fetch('https://api.anthropic.com/v1/messages', {
     'content-type': 'application/json',
   },
   body: JSON.stringify({
-    model: 'claude-sonnet-5',
-    max_tokens: 1500,
+    // Adaptive reasoning, unlike GLM: GLM burned whole max_tokens budgets on thinking
+    // and returned no text, which hard-exits this workflow at the check below.
+    // The reasoning cap is advisory, and only matters if MODEL is pointed back
+    // at a reasoning model.
+    model: 'openai/gpt-5.6-luna',
+    max_tokens: 4000,
+    reasoning: { max_tokens: 1024 },
     messages: [{ role: 'user', content: prompt }],
   }),
 });

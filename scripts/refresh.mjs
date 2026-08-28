@@ -109,11 +109,11 @@ const apiRes = await fetch('https://openrouter.ai/api/v1/messages', {
     'content-type': 'application/json',
   },
   body: JSON.stringify({
-    // Non-reasoning by design: GLM burned whole max_tokens budgets on thinking
+    // Adaptive reasoning, unlike GLM: GLM burned whole max_tokens budgets on thinking
     // and returned no text, which hard-exits this workflow at the check below.
     // The reasoning cap is advisory, and only matters if MODEL is pointed back
     // at a reasoning model.
-    model: 'openai/gpt-4o-mini',
+    model: 'openai/gpt-5.6-luna',
     max_tokens: 4000,
     reasoning: { max_tokens: 1024 },
     messages: [{ role: 'user', content: prompt }],

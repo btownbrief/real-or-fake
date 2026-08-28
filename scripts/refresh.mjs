@@ -109,7 +109,9 @@ const apiRes = await fetch('https://openrouter.ai/api/v1/messages', {
     'content-type': 'application/json',
   },
   body: JSON.stringify({
-    model: 'z-ai/glm-5.3-flash',
+    // non-reasoning: GLM burns whole max_tokens budgets on thinking and the
+    // truncation check below hard-exits the workflow when it returns no text
+    model: 'openai/gpt-4o-mini',
     // GLM reasoning is mandatory on this endpoint and shares the max_tokens
     // budget with the answer; headroom keeps the truncation check below honest.
     max_tokens: 4000,

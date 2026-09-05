@@ -1,0 +1,22 @@
+{
+  "name": "Real or Fake",
+  "short_name": "Real or Fake",
+  "description": "Real or Fake. A Btown Games production.",
+  "start_url": ".",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#f5f1e6",
+  "theme_color": "#f5f1e6",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "icon-180.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}

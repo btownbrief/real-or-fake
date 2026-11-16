@@ -10,6 +10,7 @@ on:
 
 permissions:
   contents: write
+  actions: write   # lets the job start deploy.yml (pushes made with github.token never trigger it)
 
 jobs:
   refresh:
@@ -24,6 +25,8 @@ jobs:
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
         run: node scripts/refresh.mjs
       - name: Commit if changed
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
           if ! git diff --quiet data/; then
             git config user.name "btown-brief-bot"
@@ -31,6 +34,7 @@ jobs:
             git add data/real-headlines.json data/fake-headlines.json
             git commit -m "Refresh headlines (new reals + generated fakes)"
             git push
+            gh workflow run deploy.yml --ref main   # publish it
           else
             echo "No headline changes."
           fi
